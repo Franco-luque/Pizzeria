@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
 }
 
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
-header {
+.barra-logo-nav {
     display: flex;
     justify-content: space-between;
     background-color: #222;
@@ -40,4 +42,64 @@ ul {
 
 .front {
     color: #fc200c
+}
+
+main {
+    margin: 100px 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card-izq {
+    background-image: url(../images/delivery.jpg);
+    width: 490px;
+    height: 350px;
+    text-align: center;
+    padding: 20px;
+}
+
+main h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: red;
+}
+
+.card-izq h2 span {
+    color: white;
+}
+
+.card-der {
+    width: 490px;
+    height: 350px;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    font-weight: 700;
+}
+
+.card-der div {
+    display: flex;
+    width: 350px;
+    justify-content: space-around;
+}
+
+.ingredientes {
+    width: 92px;
+    height: 129px;
+}
+
+footer {
+    flex-direction: row-reverse;
+}
+
+footer ul {
+    padding-left: 10px;
+}
+
+footer li {
+    padding-bottom: 10px;
 }
